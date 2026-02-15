@@ -3,3 +3,9 @@
 ~emacs -Q ob-shader.el~
 
 #+html: <img src="https://github.com/minad/emacs-shader-demo/blob/main/screenshot.png?raw=true"/>
+
+See also:
+
+- [[https://debbugs.gnu.org/cgi/bugreport.cgi?bug=80281][bug#80281]]
+- [[https://github.com/minad/emacs-canvas-patch][emacs-canvas-patch]]
+- [[https://github.com/minad/doom-on-emacs][doom-on-emacs]]
