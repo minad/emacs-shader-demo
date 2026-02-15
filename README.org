@@ -1,0 +1,5 @@
+#+title: Emacs Shader Demo
+
+~emacs -Q ob-shader.el~
+
+#+html: <img src="https://github.com/minad/emacs-shader-demo/blob/main/screenshot.png?raw=true"/>
