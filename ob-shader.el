@@ -5,11 +5,12 @@
 (require 'ob)
 
 (defvar ob-shader-start (float-time))
-(defvar ob-shader-canvas '(image :type canvas :canvas-width 300 :canvas-height 300 :canvas-id ob-canvas))
+(defvar ob-shader-canvas '(image :type canvas :data-width 300 :data-height 300))
 (defvar ob-shader-timer (run-with-timer
                          nil (/ 1 60.0)
                          (lambda ()
-                           (ob-shader-render ob-shader-canvas (- (float-time) ob-shader-start)))))
+                           (ob-shader-render ob-shader-canvas (- (float-time) ob-shader-start))
+                           (canvas-refresh ob-shader-canvas))))
 (setq backup-inhibited t
       create-lockfiles nil
       auto-save-default nil

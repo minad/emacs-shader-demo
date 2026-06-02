@@ -192,8 +192,6 @@ static emacs_value render(emacs_env *env, ptrdiff_t nargs,
 
     glReadPixels(0, 0, WIDTH, HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, pixel);
 
-    env->canvas_refresh(env, args[0]);
-
     return env->intern(env, "nil");
 }
 
