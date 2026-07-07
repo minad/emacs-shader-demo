@@ -169,7 +169,7 @@ static emacs_value load_shader(emacs_env *env, ptrdiff_t nargs,
 
 static emacs_value render(emacs_env *env, ptrdiff_t nargs,
                           emacs_value args[], void *data) {
-    uint32_t *pixel = env->canvas_pixel(env, args[0]);
+    uint32_t *pixel = env->canvas_data(env, args[0]);
     float time = env->extract_float(env, args[1]);
 
     if (!pixel || !gl_prog)
