@@ -5,7 +5,7 @@
 (require 'ob)
 
 (defvar ob-shader-start (float-time))
-(defvar ob-shader-canvas '(image :type canvas :data-width 300 :data-height 300))
+(defvar ob-shader-canvas '(image :type canvas :canvas-id ob-shader :data-width 300 :data-height 300))
 (defvar ob-shader-timer (run-with-timer
                          nil (/ 1 60.0)
                          (lambda ()
