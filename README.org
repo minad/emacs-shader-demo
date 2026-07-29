@@ -1,10 +1,16 @@
 #+title: Emacs Shader Demo
 
-~emacs -Q ob-shader.el~
-
 #+html: <img src="https://github.com/minad/emacs-shader-demo/blob/main/screenshot.png?raw=true"/>
 
-See also:
+* Installation
+
+You need an Emacs compiled with the Canvas patch. Then run:
+
+#+begin_src bash
+emacs -Q ob-shader.el
+#+end_src
+
+* Canvas links
 
 - [[https://debbugs.gnu.org/cgi/bugreport.cgi?bug=80281][bug#80281]]
 - [[https://github.com/minad/doom-on-emacs][doom-on-emacs]]
