@@ -4,7 +4,8 @@
 
 * Installation
 
-You need an Emacs compiled with the Canvas patch. Then run:
+You need an Emacs compiled with Canvas support (Emacs 32 or Emacs 31 with the
+backported patch). Then run:
 
 #+begin_src bash
 emacs -Q ob-shader.el
